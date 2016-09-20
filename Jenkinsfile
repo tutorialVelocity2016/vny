@@ -25,6 +25,6 @@ node {
         ]]
     ) {
         sh "docker login -u tutorialvelocity2015 -p drip4:bruise"
-        sh "docker push mesosphere/vny:${gitCommit()}"
+        sh "docker push mesospherevny:${gitCommit()}"
     }
 }
