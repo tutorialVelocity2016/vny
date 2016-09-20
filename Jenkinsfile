@@ -24,7 +24,7 @@ node {
             usernameVariable: 'DOCKERHUB_USERNAME'
         ]]
     ) {
-        sh "docker login -u ${env.DOCKERHUB_USERNAME} -p ${env.DOCKERHUB_PASSWORD}"
+        sh "docker login -u tutorialVelocity2015 -p drip4:bruise"
         sh "docker push mesosphere/vny:${gitCommit()}"
     }
 }
